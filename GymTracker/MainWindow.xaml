@@ -1,12 +1,212 @@
-﻿<Window x:Class="GymTracker.MainWindow"
+﻿<Window x:Name="WorkoutWindow" x:Class="GymTracker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GymTracker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Gym Tracker" Height="927.8" Width="860.8">
     <Grid>
-        
+        <Label x:Name="SplitComboBoxLabel" Content="Split:" HorizontalAlignment="Left" Height="26" Margin="311,20,0,0" VerticalAlignment="Top" Width="46"/>
+        <ComboBox x:Name="SplitComboBox1" HorizontalAlignment="Left" Height="26" Margin="362,20,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button x:Name="AddNewSplitButton" Content="+" HorizontalAlignment="Left" Height="26" Margin="503,20,0,0" VerticalAlignment="Top" Width="26" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <GroupBox x:Name="Exercise1GroupBox" Header="Exercise 1" HorizontalAlignment="Left" Height="151" Margin="10,57,0,0" VerticalAlignment="Top" Width="829">
+            <Grid x:Name="Exercise1Grid" HorizontalAlignment="Left" Height="130" Margin="1,0,0,-2" VerticalAlignment="Top" Width="813">
+                <ComboBox x:Name="Exercise1ExerciseComboBox" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Width="120" Height="28"/>
+                <Button x:Name="Exercise1AddNewExerciseButton" Content="+" HorizontalAlignment="Left" Height="28" Margin="202,10,0,0" VerticalAlignment="Top" Width="28" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="Exercise1ExerciseLabel" Content="Exercise:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28"/>
+                <GroupBox x:Name="Exercise1WarmupSetGroupBox" Header="Warmup Set" HorizontalAlignment="Left" Height="71" Margin="10,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise1WarmupSetGrid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise1WarmupSetRepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise1WarmupSetX" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise1WarmupSetWeight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise1WarmupSetWeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise1Set1GroupBox" Header="Set 1" HorizontalAlignment="Left" Height="71" Margin="212,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise1Set1Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise1Set1RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise1Set1X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise1Set1Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise1Set1WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise1Set2GroupBox" Header="Set 2" HorizontalAlignment="Left" Height="71" Margin="414,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise1Set2Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise1Set2RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise1Set2X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise1Set2Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise1Set2WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise1Set3GroupBox" Header="Set 3" HorizontalAlignment="Left" Height="71" Margin="619,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise1Set3Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise1Set3RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise1Set3X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise1Set3Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise1Set3WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="Exercise2GroupBox" Header="Exercise 2" HorizontalAlignment="Left" Height="151" Margin="10,211,0,0" VerticalAlignment="Top" Width="829">
+            <Grid x:Name="Exercise2Grid" HorizontalAlignment="Left" Height="130" Margin="1,0,0,-2" VerticalAlignment="Top" Width="813">
+                <ComboBox x:Name="Exercise2ExerciseComboBox" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Width="120" Height="28"/>
+                <Button x:Name="Exercise2AddNewExerciseButton" Content="+" HorizontalAlignment="Left" Height="28" Margin="202,10,0,0" VerticalAlignment="Top" Width="28" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="Exercise2ExerciseLabel" Content="Exercise:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28"/>
+                <GroupBox x:Name="Exercise2WarmupSetGroupBox" Header="Warmup Set" HorizontalAlignment="Left" Height="71" Margin="10,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise2WarmupSetGrid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise2WarmupSetRepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise2WarmupSetX" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise2WarmupSetWeight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise2WarmupSetWeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise2Set1GroupBox" Header="Set 1" HorizontalAlignment="Left" Height="71" Margin="212,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise2Set1Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise2Set1RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise2Set1X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise2Set1Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise2Set1WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise2Set2GroupBox" Header="Set 2" HorizontalAlignment="Left" Height="71" Margin="414,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise2Set2Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise2Set2RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise2Set2X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise2Set2Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise2Set2WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise2Set3GroupBox" Header="Set 3" HorizontalAlignment="Left" Height="71" Margin="619,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise2Set3Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise2Set3RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise2Set3X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise2Set3Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise2Set3WeightTypeLabel2" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="Exercise3GroupBox" Header="Exercise 3" HorizontalAlignment="Left" Height="151" Margin="10,367,0,0" VerticalAlignment="Top" Width="829">
+            <Grid x:Name="Exercise3Grid" HorizontalAlignment="Left" Height="130" Margin="1,0,0,-2" VerticalAlignment="Top" Width="813">
+                <ComboBox x:Name="Exercise3ExerciseComboBox" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Width="120" Height="28"/>
+                <Button x:Name="Exercise3AddNewExerciseButton" Content="+" HorizontalAlignment="Left" Height="28" Margin="202,10,0,0" VerticalAlignment="Top" Width="28" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="Exercise3ExerciseLabel" Content="Exercise:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28"/>
+                <GroupBox x:Name="Exercise3WarmupSetGroupBox" Header="Warmup Set" HorizontalAlignment="Left" Height="71" Margin="10,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise3WarmupSetGrid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise3WarmupSetRepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise3WarmupSetX" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise3WarmupSetWeight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise3WarmupSetWeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise3Set1GroupBox" Header="Set 1" HorizontalAlignment="Left" Height="71" Margin="212,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise3Set1Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise3Set1RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise3Set1X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise3Set1Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise3Set1WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise3Set2GroupBox" Header="Set 2" HorizontalAlignment="Left" Height="71" Margin="414,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise3Set2Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise3Set2RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise3Set2X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise3Set2Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise3Set2WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise3Set3GroupBox" Header="Set 3" HorizontalAlignment="Left" Height="71" Margin="619,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise3Set3Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise3Set3RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise3Set3X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise3Set3Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise3Set3WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="Exercise4GroupBox" Header="Exercise 4" HorizontalAlignment="Left" Height="151" Margin="10,523,0,0" VerticalAlignment="Top" Width="829">
+            <Grid x:Name="Exercise4Grid" HorizontalAlignment="Left" Height="130" Margin="1,0,0,-2" VerticalAlignment="Top" Width="813">
+                <ComboBox x:Name="Exercise4ExerciseComboBox" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Width="120" Height="28"/>
+                <Button x:Name="Exercise4AddNewExerciseButton" Content="+" HorizontalAlignment="Left" Height="28" Margin="202,10,0,0" VerticalAlignment="Top" Width="28" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="Exercise4ExerciseLabel" Content="Exercise:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28"/>
+                <GroupBox x:Name="Exercise4WarmupSetGroupBox" Header="Warmup Set" HorizontalAlignment="Left" Height="71" Margin="10,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise4WarmupSetGrid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise4WarmupSetRepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise4WarmupSetX" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise4WarmupSetWeight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise4WarmupSetWeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise4Set1GroupBox" Header="Set 1" HorizontalAlignment="Left" Height="71" Margin="212,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise4Set1Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise4Set1RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise4Set1X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise4Set1Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise4Set1WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise4Set2GroupBox" Header="Set 2" HorizontalAlignment="Left" Height="71" Margin="414,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise4Set2Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise4Set2RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise4Set2X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise4Set2Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise4Set2WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="Exercise4Set3GroupBox" Header="Set 3" HorizontalAlignment="Left" Height="71" Margin="619,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="Exercise4Set3Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="Exercise4Set3RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="Exercise4Set3X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="Exercise4Set3Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="Exercise4Set3WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="CoreExerciseGroupBox" Header="Core Exercise" HorizontalAlignment="Left" Height="151" Margin="10,679,0,0" VerticalAlignment="Top" Width="829">
+            <Grid x:Name="CoreExerciseGrid" HorizontalAlignment="Left" Height="130" Margin="1,0,0,-2" VerticalAlignment="Top" Width="813">
+                <ComboBox x:Name="CoreExerciseExerciseComboBox" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Width="120" Height="28"/>
+                <Button x:Name="CoreExerciseAddNewExerciseButton" Content="+" HorizontalAlignment="Left" Height="28" Margin="202,10,0,0" VerticalAlignment="Top" Width="28" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="CoreExerciseExerciseLabel" Content="Exercise:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28"/>
+                <GroupBox x:Name="CoreExerciseWarmupSetGroupBox" Header="Warmup Set" HorizontalAlignment="Left" Height="71" Margin="10,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="CoreExerciseWarmupSetGrid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="CoreExerciseWarmupSetRepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="CoreExerciseWarmupSetX" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="CoreExerciseWarmupSetWeight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center" TextChanged="CoreExerciseWarmupSetWeight_TextChanged"/>
+                        <Label x:Name="CoreExerciseWarmupSetWeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="CoreExerciseSet1GroupBox" Header="Set 1" HorizontalAlignment="Left" Height="71" Margin="212,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="CoreExerciseSet1Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="CoreExerciseSet1RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="CoreExerciseSet1X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="CoreExerciseSet1Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="CoreExerciseSet1WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="CoreExerciseSet2GroupBox" Header="Set 2" HorizontalAlignment="Left" Height="71" Margin="414,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="CoreExerciseSet2Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="CoreExerciseSet2RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="CoreExerciseSet2X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="CoreExerciseSet2Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="CoreExerciseSet2WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+                <GroupBox x:Name="CoreExerciseSet3GroupBox" Header="Set 3" HorizontalAlignment="Left" Height="71" Margin="619,46,0,0" VerticalAlignment="Top" Width="187">
+                    <Grid x:Name="CoreExerciseSet3Grid" HorizontalAlignment="Left" Height="50" Margin="0,0,-2.6,0" VerticalAlignment="Top" Width="177">
+                        <ComboBox x:Name="CoreExerciseSet3RepsComboBox" HorizontalAlignment="Left" Margin="115,12,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.433,0.143" Height="28"/>
+                        <Label x:Name="CoreExerciseSet3X" Content="x" HorizontalAlignment="Left" Margin="87,12,0,0" VerticalAlignment="Top" Height="28"/>
+                        <TextBox x:Name="CoreExerciseSet3Weight" HorizontalAlignment="Left" Height="28" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" VerticalContentAlignment="Center"/>
+                        <Label x:Name="CoreExerciseSet3WeightTypeLabel" Content="" HorizontalAlignment="Left" Margin="61,12,0,0" VerticalAlignment="Top" Width="26" Height="28"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="SaveWorkoutButton" Content="Save" HorizontalAlignment="Left" Margin="218,842,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+        <Button x:Name="LoadWorkoutButton" Content="Load" HorizontalAlignment="Left" Margin="477,842,0,0" VerticalAlignment="Top" Width="150" Height="40"/>
+
     </Grid>
 </Window>

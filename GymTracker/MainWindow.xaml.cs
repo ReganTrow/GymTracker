@@ -24,5 +24,10 @@ namespace GymTracker
         {
             InitializeComponent();
         }
+
+        private void CoreExerciseWarmupSetWeight_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
